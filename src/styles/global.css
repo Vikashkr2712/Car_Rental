@@ -1,0 +1,62 @@
+/* Import TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+html, body {
+  @apply bg-gray-50 text-gray-800 font-sans; /* Background color, text color, and font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0; /* Gray-300 color */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0; /* Gray-400 color */
+}
+
+::-webkit-scrollbar-track {
+  background: #edf2f7; /* Gray-100 color */
+}
+
+/* Anchor tag styling */
+a {
+  @apply text-blue-600 hover:text-blue-800 transition-colors;
+  text-decoration: none;
+}
+
+/* Button styling */
+button {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-md shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300;
+}
+
+/* Custom card styles (optional) */
+.card {
+  @apply bg-white shadow-md rounded-lg p-4;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Navbar styles (optional) */
+.navbar {
+  @apply bg-white shadow-md sticky top-0 z-50;
+}
+
+/* Footer styles (optional) */
+.footer {
+  @apply bg-gray-800 text-gray-200 py-4 text-center;
+}
